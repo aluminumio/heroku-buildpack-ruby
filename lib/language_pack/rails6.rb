@@ -15,6 +15,7 @@ class LanguagePack::Rails6 < LanguagePack::Rails5
   def compile
     puts "*" * 80
     puts FileUtils.pwd
+    puts `ls -l`
     puts "*" * 80
     sleep 180
     FileUtils.mkdir_p("tmp/pids")
