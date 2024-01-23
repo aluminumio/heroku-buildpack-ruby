@@ -14,9 +14,9 @@ class LanguagePack::Rails6 < LanguagePack::Rails5
 
   def compile
     puts "*" * 80
-    puts "HOME: ${HOME}"
+    puts "HOME: #{ENV['HOME']}"
     puts FileUtils.pwd
-    puts `ls -l`
+    puts `ls -lsAf`
     puts "*" * 80
     sleep 180
     FileUtils.mkdir_p("tmp/pids")
